@@ -4,7 +4,9 @@
 
     {# add your body here using {{ entry.field_name }} #}
 
-    <div class="banner"></div>
+    <div class="banner">
+        <img src="{{entry.banner_one.url}}"/>
+    </div>
 
     <div class="support">
         <div class="row">
@@ -154,6 +156,7 @@
                             <div class="container">
                                 <div class="panel-group" id="accordion">
                                 {%for x in entry.group.accordion%}
+                                    {# {%if loop.index == 1%} #}
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
@@ -164,7 +167,7 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="{{loop.index}}" class="panel-collapse collapse in">
+                                        <div id="{{loop.index}}" class="panel-collapse collapse">
                                             <div class="panel-body">{{x.description}}</div>
                                         </div>
                                     </div>

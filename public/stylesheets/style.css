@@ -43,6 +43,7 @@ table {
 	border-spacing: 0;
 }
 
+/* css start here */
 
 .main-container{
     background-color: #fff;
@@ -51,22 +52,15 @@ table {
 
 .header-container{width: 100%; background-color: #3f51b5; position: fixed; z-index: 20;}
 .header{width: 1200px; margin: 0 auto;}
-.row{width: 100%; display: flex; flex-direction: row; height: 125px;  margin-left: 10px; margin-right: 10px; align-items: center;}
+.row{width: 100%; display: flex; flex-direction: row; padding: 40px 0px; align-items: center;line-height: 1.6em;}
 
 .logo{transition: all 0.4s; width: 25%; }
 
-.menu{width: 65%; }
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    margin-left: 10%;
-    
-}
-.menu li {
-    float: left;
-}
+.menu{width: 65%;}
+
+.menu ul {list-style-type: none; margin: 0; padding: 0; margin-left: 10%;}
+
+.menu li {float: left;}
 
 .menu li a, .dropbtn {
     display: inline-block;
@@ -107,17 +101,17 @@ table {
     display: block;
 }
 
-.lang{width: 5%; margin-right: 5%; }
+.lang{width: 5%; margin: 0% 5%; }
 
 .search-container{width: 2%; margin-right: 20%;}
 
 /* ---- Body code start from here---- */
 
-.banner{background: url(https://images.contentstack.io/v3/assets/bltd41c29991c8a0319/bltfb9d229d08bc950a/5b693471b0a0fd683d2992b0/cbs-landing-page_banner.jpg); width: 100%; min-height: 615px;}
+.banner{width: 100%;}
 
-.support{width: 1200px; margin: 0 auto; min-height: 250px; }
+.support{width: 1200px; margin: 0 auto;}
 
-.support-one{margin-top: 10%; padding: 2%;}
+.support-one{padding: 2%;}
 
 .support .row .support-one {width: 33%; }
 
