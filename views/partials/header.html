@@ -1,0 +1,54 @@
+{# add your header here 
+to access header data use {{ partials.header.field_name }} #}
+
+<div class="header-container" id="my-header">
+            <div class="header">
+                <div class="row">
+                    <div class="logo">
+                        <a href="{{partials.header.menu[0].link.href}}">
+                            <img src="{{partials.header.logo.url}}" alt="Logo" class="logo-img">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="{{partials.header.menu[0].link.href}}">{{partials.header.menu[0].link.title}}</a>
+                            </li>
+                            <li>
+                                <a href="{{partials.header.menu[1].link.href}}">{{partials.header.menu[1].link.title}}</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">{{partials.header.menu[2].link.title}}</a>
+                                <div class="dropdown-content">
+                                    <a href="{{partials.header.menu[2].sub_menu[0].link.href}}">{{partials.header.menu[2].sub_menu[0].link.title}}</a>
+                                    <a href="{{partials.header.menu[2].sub_menu[1].link.href}}">{{partials.header.menu[2].sub_menu[1].link.title}}</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="{{partials.header.menu[3].link.href}}">{{partials.header.menu[3].link.title}}</a>
+                            </li>
+                            <li>
+                                <a href="{{partials.header.menu[4].link.href}}">{{partials.header.menu[4].link.title}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lang">
+                        <select id="language">
+                            <option value="/">{{partials.header.language[0]}}</option>
+                            <option value="/es/">{{partials.header.language[1]}}</option>
+                            <option value="/zh/">{{partials.header.language[2]}}</option>
+                        </select>
+                    </div>
+                    <div class="search-container">
+                        <form method="get" action="http://www.google.com/search">
+                            <div style="padding:4px;width:20em;">
+                                <div>
+                                    <input type="text" name="q" size="25" maxlength="255" value="" placeholder="Search" class="search" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header code end -->

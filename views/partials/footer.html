@@ -1,0 +1,76 @@
+{# add your footer here
+to access footer data use {{ partials.footer.field_name }} #}
+<!-- footer code start from here -->
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="footer-contact">
+                    {%for x in partials.footer.address%}
+                        <div class="contact">
+                            <i class="{{x.font_awesome}} size-32 margin-bottom-20" style="color: #a21c16"></i>
+                            {{x.detail}}
+                        </div>
+                        {%endfor%}
+                        {# <div class="contact">
+                            <i class="fa fa-envelope-o size-32 margin-bottom-20" style="color: #a21c16"></i>
+                            <p>
+                                <a href="mailto:info@corporate.com">info@corporate.com</a>
+                            </p>
+                            <p>
+                                <a href="mailto:support@corporate.com">support@corporate.com</a>
+                            </p>
+                        </div> #}
+                        {# <div class="contact">
+                            <i class="fa fa-phone size-32 margin-bottom-20" style="color: #a21c16"></i>
+                            <p>Phone: +1.000.000.0000</p>
+                        </div> #}
+                    </div>
+                    <div class="footer-social-cont">
+                        <div class="footer-social">
+                            <div class="copy-right">
+                                {{partials.footer.copy}}
+                            </div>
+                            <div class="social">
+                                {%for x in partials.footer.social%}
+                                <a href="{{x.link.href}}">
+                                    <i class="{{x.link.title}}" aria-hidden="true"></i>
+                                </a>
+                                {%endfor%}
+
+                                {# <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fa fa-vimeo" aria-hidden="true"></i>
+                                </a> #}
+
+                                {# <a href="#">
+                                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a> #}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top button code start -->
+    <div onclick="topFunction()" id="myBtn" class="go-to-top">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
+        
+    <!-- Back to top button code end -->

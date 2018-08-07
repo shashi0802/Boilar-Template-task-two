@@ -1,0 +1,198 @@
+{% extends "./layout/parent.html" %}
+{% block main_body %}
+    <title>{{ entry.title }}</title>
+
+    {# add your body here using {{ entry.field_name }} #}
+
+    <div class="banner"></div>
+
+    <div class="support">
+        <div class="row">
+            {% for x in entry.support %}
+                <div class="support-one">
+                    <i class="{{x.font_awesome}} text-color-theme" style="color: #e9886c" onmouseover="this.style.color='#a21c16'" onmouseout="this.style.color='#e9886c'"></i>
+                    <h5 class="support-name">{{x.name}}</h5>
+                    <p class="support-description">{{x.description}}
+                    </p>
+                </div>
+                {%endfor%}
+                
+            </div>
+        </div>
+        <!-- here support is end -->
+
+        <!-- services code start here -->
+        <div class="services">
+            <div class="serv-container">
+                <div class="services-item">
+                    <div class="team">
+                        <h2>{{entry.service.title}}</h2>
+                        <p>{{entry.service.description}}</p>
+                    </div>
+                    <div class="service-type">
+                        {% for x in entry.service.feature%}
+                            <div class="service-name">
+                                <i class="{{x.font_awesome}} text-color-theme" style="color: #e9886c" onmouseover="this.style.color='#a21c16'" onmouseout="this.style.color='#e9886c'"></i>
+                                <h6>{{x.name}}</h6>
+                                <p>{{x.description}}</p>
+                            </div>
+                            {%endfor%}
+                        </div>
+                    </div>
+                    <div class="service-images">
+                        <img src="{{entry.service.service_image.url}}" alt="iphone"/>
+                    </div>
+                </div>
+            </div>
+            <!-- services code end here -->
+
+            <!-- testimonial code -->
+            <div class="testimonial">
+                <div class="testimonial-column">
+                    <div class="work">
+                        <h2>{{entry.testimonial.title}}</h2>
+                        <div class="work-container">
+                            <div class="work-description">
+                                <p>{{entry.testimonial.description}}</p>
+                            </div>
+                            <div class="work-btn">
+                                <a href="{{entry.testimonial.cta.href}}">{{entry.testimonial.cta.title}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-container">
+                        {%for x in entry.testimonial.service%}
+                            <div class="testimonial-content">
+                                <div class="testimonial-image">
+                                    <a>
+                                        <div class="image-container">
+                                            <img src="{{x.image.url}}"/>
+                                            <div class="overlay">
+                                                <div class="text">{{x.indication.title}}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="testimonial-name">
+                                    <h6>{{x.name}}</h6>
+                                    <p>{{x.date}}</p>
+                                </div>
+                            </div>
+                            {%endfor%}
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- testimonial code end -->
+
+                <!-- background image code -->
+                <div class="banner-two"></div>
+                <!-- background image code end-->
+
+                <!-- slider code -->
+                <div class="slider">
+                    <div class="slider-container">
+                        <div class="font-awe">
+                            <i class="{{entry.author.font_awesome}} testimonials-1-icon text-color-theme" style="color: #e9886c"></i>
+                        </div>
+                        <div class="my-carousel">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                   
+                                        <div class="item active">
+
+                                            <p>{{entry.author.description[0].detail}}</p>
+                                            <p>{{entry.author.description[0].name}}</p>
+                                        </div>
+                            
+                                        <div class="item">
+                            <p>{{entry.author.description[1].detail}}</p>
+                            <p>{{entry.author.description[1].name}}</p>
+                        </div>
+
+                        <div class="item">
+                            <p>{{entry.author.description[2].detail}}</p>
+                            <p>{{entry.author.description[2].name}}</p>
+                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider code end -->
+
+                    <!-- purchase code -->
+                    <div class="purchase-content">
+                        <div class="content-one">
+                            <span>{{entry.purchase.title}}</span>
+                            <span>
+                                <a href="{{entry.purchase.cta.href}}">{{entry.purchase.cta.title}}</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- purchase code -->
+
+                    <!-- support code start here -->
+                    <div class="accordion-one">
+                        <div class="accordion-container">
+                            <div class="accordion-service">
+                                <h5>{{entry.group.support.title}}</h5>
+                                <p>
+                                    {{entry.group.support.description}}
+                                    <h5>{{entry.group.payment.title}}</h5>
+                                    <p>{{entry.group.payment.description}}</p>
+                                </p>
+                            </div>
+                            <div class="container">
+                                <div class="panel-group" id="accordion">
+                                {%for x in entry.group.accordion%}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#{{loop.index}}">
+                                                    <span class="text-success"></span>
+                                                    {{x.title}}
+                                                    <!-- <span class="glyphicon glyphicon-chevron-up pull-right"></span> -->
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="{{loop.index}}" class="panel-collapse collapse in">
+                                            <div class="panel-body">{{x.description}}</div>
+                                        </div>
+                                    </div>
+                                    {%endfor%}
+                                    
+                                </div>
+                            </div>
+                            <!-- end container -->
+                        </div>
+                    </div>
+                    <!-- support code end here -->
+
+                    <!-- company status code -->
+                    <div class="company-status">
+                        <div class="status-content">
+                            <h2>{{entry.state.title}}</h2>
+                            <p>{{entry.state.description}}</p>
+                        </div>
+                    </div>
+                    <!-- company status code end -->
+
+                    <!-- compare image code here -->
+
+                    <div class="compare-image">
+                        <img src="{{entry.compare_image.url}}" alt="Company description"/>
+                    </div>
+
+                    <!-- compare image code here -->
+                </div>
+
+            {% endblock %}
