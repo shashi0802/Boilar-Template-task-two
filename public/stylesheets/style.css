@@ -133,7 +133,7 @@ table {
 .team-service{width: 100%; float: left;}
 
 .service-images{width: 30%; float: right;}
-
+.service-images img{width: 100%;}
 .service-type{display: flex; flex-flow: row wrap; padding: 40px 0px;}
 .service-type h6{margin-top: -4%; margin-left: 7%;font-weight: bold;}
 .service-type p{margin: 10px;}
