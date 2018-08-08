@@ -106,14 +106,17 @@ table {
 .search-container{width: 2%; margin-right: 20%;}
 
 /* ---- Body code start from here---- */
-
+.main-container{padding: 60px 0px;}
 .banner{width: 100%;}
+
+.banner img{width: 100%;}
 
 .support{width: 1200px; margin: 0 auto;}
 
-.support-one{padding: 2%;}
+.support-one{width: 33%; float: left; padding: 50px 25px;}
+.row-support{width: 100%; line-height: 1.6em; clear: both;}
 
-.support .row .support-one {width: 33%; }
+/* .support .row .support-one {width: 33%; } */
 
 .support-one i{font-size: 38px; display: block; text-align: center;}
 
@@ -122,18 +125,22 @@ table {
 .support-one p{line-height: 1.6em;}
 
 .team h2{font-weight: bold;}
-.team p{width: 180%;}
-.services{width: 100%; background-color: #f6f6f6; min-height: 600px;}
-.serv-container{width: 1200px; margin: 0 auto; display: flex; flex-direction: row; min-height: 510px; padding-top: 50px; padding-bottom: 40px;}
-.services-item{width: 55%;display: flex; flex-direction: column; margin-left: 3%;}
-.service-images{width: 32%;margin-left: 32%;}
-.service-type{display: flex; flex-flow: row wrap;margin: 10% -94% 0 0;}
+/* .team p{width: 100%;} */
+
+.services{width: 100%; background-color: #f6f6f6; clear: both;}
+.serv-container{width: 1200px; margin: 0 auto; padding: 50px 0px; clear: both;}
+.services-item{width: 70%; float: left; clear: both;}
+.team-service{width: 100%; float: left;}
+
+.service-images{width: 30%; float: right;}
+
+.service-type{display: flex; flex-flow: row wrap; padding: 40px 0px;}
 .service-type h6{margin-top: -4%; margin-left: 7%;font-weight: bold;}
-.service-type p{margin-top: 10px;margin-bottom: 10px;}
+.service-type p{margin: 10px;}
 .service-name{width: 50%;}
 
 /* testimonial css */
-.testimonial{width: 1200px; margin: 0 auto; min-height: 650px; }
+.testimonial{width: 1200px; margin: 0 auto; min-height: 650px; clear: both; }
 
 .testimonial-column{width: 100%; min-height: 500px; display: flex; flex-direction: column; padding: 50px 0px;}
 
