@@ -139,11 +139,11 @@ table {
 .service-name{width: 50%;}
 
 /* testimonial css */
-.testimonial{width: 1200px; margin: 0 auto; min-height: 650px; clear: both; }
+.testimonial{width: 1200px; margin: 0 auto; clear: both; }
 
-.testimonial-column{width: 100%; min-height: 500px; display: flex; flex-direction: column; padding: 50px 0px;}
+.testimonial-column{width: 100%; display: flex; flex-direction: column; padding: 50px 0px;}
 
-.testimonial-column .work{width: 100%; min-height: 100px;clear: both;}
+.testimonial-column .work{width: 100%; clear: both;}
 
 .work h2{padding: 10px 0px; font-weight: bold;}
 
@@ -163,7 +163,7 @@ table {
 
 .testimonial-image{width: 24%;}
 
-.testimonial-image img{ width: 375px; min-height: 350px;}
+.testimonial-image img{ width: 375px;}
 .image-container{position: relative;}
 .overlay {
     position: absolute;
@@ -294,16 +294,20 @@ a:-webkit-any-link{text-decoration: none;}
 
 /* -------Footer code is from here------------- */
 
-.footer{width: 100%; min-height: 400px;}
-.footer-container{width: 100%; min-height: 300px; background-color: #E9876C;}
-.footer-contact{width: 1200px;margin: 0 auto; min-height: 300px; display: flex; flex-direction: row;align-items: center;}
-.footer-contact .contact{width: 33%; margin-left: 10%;}
+.footer{width: 100%;}
+.footer-container{width: 100%; background-color: #E9876C;}
+.footer-contact{display: flex; flex-direction: row; padding: 60px 0px;}
+.contact-row{padding: 0% 8%;
+    width: 1200px;
+    margin: 0 auto;}
+.footer-contact .contact{width: 33%;}
 .footer-contact .contact i{font-size: 38px;display: block;text-align: center;margin-bottom: 20px;}
 .footer-contact .contact p{text-align: center;margin-top: 10px;}
-.footer-social-cont{width: 100%; height: 100px; background-color: #000000;}
 
-.footer-social{width: 1200px;margin: 0 auto; min-height: 100px; display: flex; flex-direction: row;align-items: center;}
-.copy-right{width: 50%;margin-left: 3%;margin-right: 27%;}
+.footer-social-cont{width: 100%; padding: 20px 0px; background-color: #000000;}
+
+.footer-social{width: 1200px;margin: 0 auto; display: block; overflow: overlay;}
+.copy-right{width: 42%; float: left; margin-top: 18px;}
 .copy-right p{color: white;}
 .copy-right a{color: red; text-decoration: none;}
 .copy-right a:hover{color: white;}
