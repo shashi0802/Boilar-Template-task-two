@@ -106,7 +106,7 @@ table {
 .search-container{width: 2%; margin-right: 20%;}
 
 /* ---- Body code start from here---- */
-.main-container{padding: 60px 0px;}
+.main-container{padding-top: 60px; padding-bottom: 2px;}
 .banner{width: 100%;}
 
 .banner img{width: 100%;}
@@ -205,11 +205,12 @@ table {
 /* testimonial css end */
 
 /* banner image two css */
-.banner-two{background: url(https://images.contentstack.io/v3/assets/bltd41c29991c8a0319/blt191be4c9b80798be/5b6937fe858e507e4016d825/wb.gif)50% -59.7px / cover no-repeat scroll; width: 100%; min-height: 380px;}
+.banner-two{width: 100%; }
+.banner-two img{width:100%;}
 /* banner image two css end */
 
 /* slider code css */
-.slider{width: 100%; background-color: #2F2F2F; min-height: auto;}
+.slider{width: 100%; background-color: #2F2F2F;}
 .slider-container{width: 1200px; margin: 0 auto;}
 .font-awe{text-align: center; }
 .font-awe i{font-size: 50px;margin: 40px 0px;}
@@ -223,15 +224,15 @@ table {
 /* slider code css end */
 
 /* purchase code css */
-.purchase-content{width: 100%; background-color: #e9876c; min-height: auto;}
-.content-one{width: 1200px; margin: 0 auto; padding: 80px 0px; }
-.content-one a{background-color: #e9876c; border: 2px solid white; color: white; padding: 7px 35px; text-decoration: none;}
+.purchase-content{width: 100%; background-color: #e9876c;}
+.content-one{width: 1200px; margin: 0 auto; padding: 80px 0px; display: table;text-align: center;}
+.content-one a{background-color: #e9876c; border: 2px solid white;margin-left: 5%; color: white; padding: 7px 35px; text-decoration: none;}
 .content-one a:hover{background: #EFEFF0; color: #2F3B6B;}
-.content-one span{text-align: center; margin-left: 25%; color: white; font-size: 1.2em;}
+.content-one span{color: white; font-size: 1.2em;}
 /* purchase code css end */
 
 /* accordion code css */
-.accordion-one{width: 100%; background-color: #F6F6F6; min-height: 400px;}
+.accordion-one{width: 100%; background-color: #F6F6F6;padding-bottom: 20px;}
 .accordion-container{width: 1200px; margin: 0 auto; display: flex; flex-direction: row;}
 .accordion-service{width: 50%; margin: 50px 0px; padding: 20px 0px;}
 .accordion-service h5{font-weight: bold; line-height: 1.6em;}
@@ -260,9 +261,9 @@ a:-webkit-any-link{text-decoration: none;}
 /* accordion code css end */
 
 /* company status css */
-.company-status{width: 1200px; margin: 0 auto; align-content: center; padding-top: 40px;padding-bottom: 40px;}
-.status-content h2{top: 50%;font-weight: bold; text-align: center;}
-.status-content p{line-height: 1.6em; text-align: center;margin-left: 25%;margin-right: 25%;}
+.company-status{width: 1200px; margin: 0 auto; padding: 40px 0px;}
+.status-content h2{font-weight: bold; text-align: center;}
+.status-content p{line-height: 1.6em; margin-left: 25%; margin-right: 25%;}
 /* company status css end */
 
 /* compare image code*/
