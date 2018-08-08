@@ -206,7 +206,7 @@ table {
 
 /* banner image two css */
 .banner-two{width: 100%; }
-.banner-two img{width:100%;}
+.banner-two img{width:100%; display: block;}
 /* banner image two css end */
 
 /* slider code css */
