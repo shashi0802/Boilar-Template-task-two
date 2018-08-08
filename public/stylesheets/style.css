@@ -125,17 +125,16 @@ table {
 .support-one p{line-height: 1.6em;}
 
 .team h2{font-weight: bold;}
-/* .team p{width: 100%;} */
 
 .services{width: 100%; background-color: #f6f6f6; clear: both;}
 .serv-container{width: 1200px; margin: 0 auto; padding: 50px 0px; clear: both;}
 .services-item{width: 70%; float: left; clear: both;}
-.team-service{width: 100%; float: left;}
+.team-service{width: 100%;}
 
 .service-images{width: 30%; float: right;}
 .service-images img{width: 100%;}
 .service-type{display: flex; flex-flow: row wrap; padding: 40px 0px;}
-.service-type h6{margin-top: -4%; margin-left: 7%;font-weight: bold;}
+.service-type h6{margin-top: -4%; margin-left: 7%; font-weight: bold;}
 .service-type p{margin: 10px;}
 .service-name{width: 50%;}
 
