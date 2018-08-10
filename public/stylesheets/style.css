@@ -321,12 +321,12 @@ a:-webkit-any-link{text-decoration: none;}
 /* Media query */
 @media only screen and(min-width: 768px){
 .wrapper{
-    width: 750px;
+    width: 98%;
     }
 }
 @media only screen and(min-width: 992px){
 .wrapper {
-    width: 970px;
+    width: 98%;
     }
 }
 @media only screen and(min-width: 1200px){
