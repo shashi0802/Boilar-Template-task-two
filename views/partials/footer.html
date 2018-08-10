@@ -3,7 +3,7 @@ to access footer data use {{ partials.footer.field_name }} #}
 <!-- footer code start from here -->
 <div class="footer">
     <div class="footer-container">
-        <div class="contact-row">
+        <div class="contact-row  wrapper">
             <div class="footer-contact">
 
                 {%for x in partials.footer.address%}
@@ -15,7 +15,7 @@ to access footer data use {{ partials.footer.field_name }} #}
                 </div>
             </div>
             <div class="footer-social-cont">
-                <div class="footer-social">
+                <div class="footer-social  wrapper">
                     <div class="copy-right">
                         {{partials.footer.copy}}
                     </div>

@@ -49,9 +49,13 @@ table {
     background-color: #fff;
     margin: 0 auto;
 }
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .header-container{width: 100%; background-color: #3f51b5; position: fixed; z-index: 20;}
-.header{width: 1200px; margin: 0 auto;}
+/* .header{width: 1200px; margin: 0 auto;} */
 .row{width: 100%; display: flex; flex-direction: row; padding: 40px 0px; align-items: center;line-height: 1.6em;}
 
 .logo{transition: all 0.4s; width: 25%; }
@@ -111,7 +115,7 @@ table {
 
 .banner img{width: 100%;}
 
-.support{width: 1200px; margin: 0 auto;}
+/* .support{width: 1200px; margin: 0 auto;} */
 
 .support-one{width: 33%; float: left; padding: 50px 25px;}
 .row-support{width: 100%; line-height: 1.6em; clear: both;}
@@ -127,7 +131,7 @@ table {
 .team h2{font-weight: bold;}
 
 .services{width: 100%; background-color: #f6f6f6; clear: both;}
-.serv-container{width: 1200px; margin: 0 auto; padding: 50px 0px; clear: both;}
+.serv-container{padding: 50px 0px; clear: both;}
 .services-item{width: 70%; float: left;}
 .team-service{width: 100%;}
 
@@ -139,7 +143,7 @@ table {
 .service-name{width: 50%;}
 
 /* testimonial css */
-.testimonial{width: 1200px; margin: 0 auto; clear: both; }
+.testimonial{clear: both; }
 
 .testimonial-column{width: 100%; display: flex; flex-direction: column; padding: 50px 0px;}
 
@@ -211,7 +215,7 @@ table {
 
 /* slider code css */
 .slider{width: 100%; background-color: #2F2F2F;}
-.slider-container{width: 1200px; margin: 0 auto;}
+/* .slider-container{width: 1200px; margin: 0 auto;} */
 .font-awe{text-align: center; }
 .font-awe i{font-size: 50px;margin: 40px 0px;}
 .item p{margin: 40px 0px; color: white;text-align: center; opacity: 0.7;}
@@ -225,7 +229,7 @@ table {
 
 /* purchase code css */
 .purchase-content{width: 100%; background-color: #e9876c;}
-.content-one{width: 1200px; margin: 0 auto; padding: 80px 0px; display: table;text-align: center;}
+.content-one{padding: 80px 0px; display: table;text-align: center;}
 .content-one a{background-color: #e9876c; border: 2px solid white;margin-left: 5%; color: white; padding: 7px 35px; text-decoration: none;}
 .content-one a:hover{background: #EFEFF0; color: #2F3B6B;}
 .content-one span{color: white; font-size: 1.2em;}
@@ -233,7 +237,7 @@ table {
 
 /* accordion code css */
 .accordion-one{width: 100%; background-color: #F6F6F6;padding-bottom: 20px;}
-.accordion-container{width: 1200px; margin: 0 auto; display: flex; flex-direction: row;}
+.accordion-container{display: flex; flex-direction: row;}
 .accordion-service{width: 50%; margin: 50px 0px; padding: 20px 0px;}
 .accordion-service h5{font-weight: bold; line-height: 1.6em;}
 .accordion-service p{line-height: 1.2em;}
@@ -261,7 +265,7 @@ a:-webkit-any-link{text-decoration: none;}
 /* accordion code css end */
 
 /* company status css */
-.company-status{width: 1200px; margin: 0 auto; padding: 40px 0px;}
+.company-status{padding: 40px 0px;}
 .status-content h2{font-weight: bold; text-align: center;}
 .status-content p{line-height: 1.6em; margin-left: 25%; margin-right: 25%;}
 /* company status css end */
@@ -297,16 +301,14 @@ a:-webkit-any-link{text-decoration: none;}
 .footer{width: 100%;}
 .footer-container{width: 100%; background-color: #E9876C;}
 .footer-contact{display: flex; flex-direction: row; padding: 60px 0px;}
-.contact-row{padding: 0% 8%;
-    width: 1200px;
-    margin: 0 auto;}
+.contact-row{padding: 0% 8%;}
 .footer-contact .contact{width: 33%;}
 .footer-contact .contact i{font-size: 38px;display: block;text-align: center;margin-bottom: 20px;}
 .footer-contact .contact p{text-align: center;margin-top: 10px;}
 
 .footer-social-cont{width: 100%; padding: 20px 0px; background-color: #000000;}
 
-.footer-social{width: 1200px;margin: 0 auto; display: block; overflow: overlay;}
+.footer-social{display: block; overflow: overlay;}
 .copy-right{width: 42%; float: left; margin-top: 18px;}
 .copy-right p{color: white;}
 .copy-right a{color: red; text-decoration: none;}
@@ -314,3 +316,21 @@ a:-webkit-any-link{text-decoration: none;}
 .social{width: 50%;float: right;}
 .social a{margin-left: 5px; text-decoration: none; float: right; padding: 10px;}
 .social i{color: white;font-size: 26px;}
+
+
+/* Media query */
+@media only screen and(min-width: 768px){
+.wrapper{
+    width: 750px;
+    }
+}
+@media only screen and(min-width: 992px){
+.wrapper {
+    width: 970px;
+    }
+}
+@media only screen and(min-width: 1200px){
+.wrapper {
+    width: 1100px;
+    }
+}

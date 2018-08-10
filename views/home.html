@@ -8,7 +8,7 @@
             <img src="{{entry.banner_one.url}}"/>
         </div>
 
-        <div class="support">
+        <div class="wrapper">
             <div class="row-support">
                 {% for x in entry.support %}
                     <div class="support-one">
@@ -25,7 +25,7 @@
 
             <!-- services code start here -->
             <div class="services">
-                <div class="clearfix serv-container">
+                <div class="clearfix serv-container  wrapper">
                     <div class="services-item">
                         <div class="team-service">
                         <div class="team">
@@ -51,7 +51,7 @@
                 <!-- services code end here -->
 
                 <!-- testimonial code -->
-                <div class="testimonial">
+                <div class="testimonial  wrapper">
                     <div class="testimonial-column">
                         <div class="work">
                             <h2>{{entry.testimonial.title}}</h2>
@@ -97,7 +97,7 @@
 
                     <!-- slider code -->
                     <div class="slider">
-                        <div class="slider-container">
+                        <div class=" wrapper">
                             <div class="font-awe">
                                 <i class="{{entry.author.font_awesome}} testimonials-1-icon text-color-theme" style="color: #e9886c"></i>
                             </div>
@@ -137,7 +137,7 @@
 
                     <!-- purchase code -->
                     <div class="purchase-content">
-                        <div class="content-one">
+                        <div class="content-one  wrapper">
                             <span>{{entry.purchase.title}}</span>
                             <span>
                                 <a href="{{entry.purchase.cta.href}}">{{entry.purchase.cta.title}}</a>
@@ -148,7 +148,7 @@
 
                     <!-- support code start here -->
                     <div class="accordion-one">
-                        <div class="accordion-container">
+                        <div class="accordion-container  wrapper">
                             <div class="accordion-service">
                                 <h5>{{entry.group.support.title}}</h5>
                                 <p>
@@ -185,7 +185,7 @@
                         <!-- support code end here -->
 
                         <!-- company status code -->
-                        <div class="company-status">
+                        <div class="company-status  wrapper">
                             <div class="status-content">
                                 <h2>{{entry.state.title}}</h2>
                                 <p>{{entry.state.description}}</p>
