@@ -1,9 +1,8 @@
 
-/* @media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px){
     .wrapper {
     width: 98%;
     margin: 0 auto;
-    background-color: pink;
     }
 }
     
@@ -11,12 +10,26 @@
     .wrapper{
         width: 95%;
         margin: 0 auto;
-        background-color: yellow;
+    }
+    .testimonial-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial-content {
+        width: 50%;
+    }
+    .testimonial-image {
+        width: 100%;
+        margin: 10px 0px;
     }
     
-} */
+}
     
     @media only screen and (max-width: 778px) {
+        .main-container {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
         .header-container {
             width: 100%;
             background-color: #3f51b5;
@@ -25,13 +38,10 @@
         .wrapper{
         width: 90%;
         margin: 0 auto;
-        /* background-color:green; */
+        display: block;
     }
     .row{
-        /* width: 100%;
-        margin: 0% 2%; */
          display: block;
-        /* flex-direction: row; */ 
         padding: 40px 0px;
         align-items: center;
         line-height: 1.6em;
@@ -42,7 +52,6 @@
     }
     .menu{
         float: right;
-        /* background-color: #fff; */
         width: 18%;
     }
     menu ul {
@@ -50,7 +59,6 @@
         margin: 0;
         padding: 0;
         width: 200px;
-        /* background-color: #f1f1f1; */
     }
     
     menu li a {
@@ -61,7 +69,6 @@
     }
     
     menu li a.active {
-        /* background-color: #4CAF50; */
         color: white;
     }
     
@@ -84,6 +91,7 @@
         width: 100%;
         line-height: 1.6em;
         text-align: center;
+        margin: 10px 0px;
     }
     .support-one {
         width: 33%;
@@ -118,10 +126,86 @@
         width: 100%;
         font-size: 1.2em;
         margin-top: 10px;
-        float: left;
+        float: none;
     }
     .work-btn {
         margin-top: 17px;
-        float: right;
+        float: none;
+    }
+
+    .testimonial-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .testimonial-image {
+        width: 94%;
+    }
+    .testimonial-image img {
+        width: 94%;
+    }
+    .testimonial-image .overlay{
+        width: 94%;
+    }
+    .testimonial-content {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px 0px;
+    }
+    .testimonial-name {
+        margin: 20px 0px; 
+        width: 94%;
+        clear: both;
+    }
+
+    .accordion-service {
+        width: 100%;
+        margin: 0px 0px;
+        padding-top: 40px;
+    }
+
+    .container{width: 100%;
+        margin: 10px 0px;
+    } 
+    
+    .footer-contact {
+        display: block;
+        text-align: center;
+       
+        padding: 60px 0px;
+    }
+    .footer-contact .contact {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .copy-right {
+        width: 100%;
+        float: none;
+        margin-top: 18px;
+        text-align: center;
+    }
+    .social {
+        padding: 10px;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .social a {
+        float: none;
+    }
+
+    .status-content p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .content-one span {
+        display: block;
+        margin: 20px 0px;
+    }
+    #myBtn{
+        display: none !important;
+       
     }
 }
