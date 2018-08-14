@@ -115,7 +115,7 @@ select {
 
 /* ---- Body code start from here---- */
 .main-container{padding-top: 60px; padding-bottom: 2px;}
-.banner{width: 100%;}
+.banner{width: 100%; margin-top: 60px;}
 
 .banner img{width: 100%;}
 
