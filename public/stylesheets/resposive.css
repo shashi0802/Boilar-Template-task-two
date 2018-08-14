@@ -70,6 +70,14 @@
             margin-top: 30px;
         }
 
+        .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover  {
+            color: red;
+            background-color: #4152b4;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+            color: red;
+        }
+
         .header-container {
             width: 100%;
             background-color: #3f51b5;
