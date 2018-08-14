@@ -48,10 +48,25 @@
 
 
     @media only screen and (max-width: 768px) {
+        .navbar-header {
+            width: 100%;
+        }
+        .navbar-brand {
+            width: 40%;
+        }
         .main-container {
             padding-top: 0px;
             padding-bottom: 0px;
         }
+        .navbar-default .navbar-toggle {
+            margin-top: 25px;
+        }
+        .navbar-default .navbar-collapse {
+            float: none;
+            padding-right: 0px;
+            margin-top: 20px;
+        }
+
         .header-container {
             width: 100%;
             background-color: #3f51b5;
