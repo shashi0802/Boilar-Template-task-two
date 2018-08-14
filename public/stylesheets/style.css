@@ -74,6 +74,12 @@ table {
     .navbar-default .navbar-toggle {
         margin-top: 55px;
     }
+    .navbar-brand {
+        display: inline-block;
+        width: 70%;
+        padding: 16px 0px;
+    }
+    
 }
 
 .main-container-header{width: 1200px; margin: 0 auto;}

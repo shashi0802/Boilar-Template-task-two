@@ -7,6 +7,28 @@
 }
     
     @media only screen and (max-width: 992px){
+        .navbar-header{
+            width: 150px;
+        }
+        .navbar-brand {
+            height: 0;
+            width: 100%;
+        }
+        .navbar-brand>img {
+            margin-top: 0px;
+            width: 100%;
+        }
+        .navbar-default .navbar-collapse{
+            float: right;
+            padding-right: 0px;
+        }
+        .navbar-nav {
+            margin: 0px 0px;
+        }
+        .main-container {
+            padding-top: 1px;
+            padding-bottom: 0px;
+        }
     .wrapper{
         width: 95%;
         margin: 0 auto;
@@ -22,13 +44,10 @@
         width: 100%;
         margin: 10px 0px;
     }
-    /* .banner {
-        margin-top: 55px;
-    } */
-    
 }
-    
-    @media only screen and (max-width: 778px) {
+
+
+    @media only screen and (max-width: 768px) {
         .main-container {
             padding-top: 0px;
             padding-bottom: 0px;
@@ -48,50 +67,7 @@
         padding: 40px 0px;
         align-items: center;
         line-height: 1.6em;
-    }
-    .logo{
-        float: left;
-        width: 50%;
-    }
-    .menu{
-        float: right;
-        width: 18%;
-    }
-    menu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-    }
-    
-    menu li a {
-        display: block;
-        color: #000;
-        padding: 8px 16px;
-        text-decoration: none;
-    }
-    
-    menu li a.active {
-        color: white;
-    }
-    
-    menu li a:hover:not(.active) {
-        background-color: #555;
-        color: white;
-    }
-    .lang{
-        width: 5%; 
-    }
-    .menu .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 50px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-
-    
+    }   
     .row-support {
         width: 100%;
         line-height: 1.6em;
@@ -99,8 +75,11 @@
         margin: 10px 0px;
     }
     .support-one {
-        width: 33%;
+        width: 100%;
         display: contents;
+    }
+    .support-one i{
+        margin-top: 15px;
     }
 
     .services {
@@ -123,6 +102,10 @@
     }
     .service-images img{width: 50%;}
 
+    .service-type h6 {
+        margin-top: -5%;
+    }
+
     .work-container {
         width: 100%;
         clear: both;
@@ -134,7 +117,7 @@
         float: none;
     }
     .work-btn {
-        margin-top: 17px;
+        margin-top: 25px;
         float: none;
         text-align: center;
     }
@@ -171,7 +154,7 @@
         padding-top: 40px;
     }
 
-    .container{width: 100%;
+    .container-one{width: 100%;
     } 
     
     .footer-contact {
@@ -212,5 +195,26 @@
     #myBtn{
         display: none !important;
        
+    }
+}
+
+    @media only screen and (max-width: 600px){
+    .service-type {
+        flex: none;
+        text-align: center;
+    }
+    .service-name {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .service-type h6 {
+        margin-top: 0px;
+        
+    }
+}
+
+    @media only screen and (max-width: 400px){
+    .social i {
+        font-size: 15px;
     }
 }
