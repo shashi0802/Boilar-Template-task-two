@@ -54,6 +54,9 @@
         .navbar-brand {
             width: 40%;
         }
+        .navbar-default .navbar-collapse{
+            border-color: #4253B3;
+        }
         .main-container {
             padding-top: 0px;
             padding-bottom: 0px;
