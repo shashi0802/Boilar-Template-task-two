@@ -227,7 +227,11 @@
        
     }
 }
-
+    /* @media only screen and (max-width: 767px){
+        .dropdown:hover .dropdown-menu {
+            display: none;
+        }
+    } */
     @media only screen and (max-width: 600px){
     .service-type {
         flex: none;

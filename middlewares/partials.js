@@ -1,5 +1,10 @@
 var async = require('async')
+
+console.log("middleware---partial-----model---contentstack---3")
+
 var Stack = require('../models/contentstack')
+
+console.log("middleware---partial-----model---contentstack---end---5")
 
 module.exports = function (req, res, next) {
 		var contentTypes = ["header", "footer"]
@@ -21,3 +26,5 @@ module.exports = function (req, res, next) {
 			}
 		)	
 }
+
+console.log("enside the partial file------end------6")

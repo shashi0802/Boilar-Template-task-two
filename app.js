@@ -21,8 +21,14 @@ app.use(cookieParser())
 //setting static files
 app.use('/static',express.static(__dirname + '/public'))
 
+app.get("/",(req,res)=>{
+  console.log("app.js call")
+  res.render("/home.html");
+});
+
 //requiring routes
 require('./routes')(app)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
